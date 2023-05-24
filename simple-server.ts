@@ -1,6 +1,17 @@
 import { ApolloServer, gql } from 'apollo-server';
 import { randomUUID } from 'node:crypto';
 
+/*
+  -> Under Fetching
+      When the HTTP route returns less data than necessary
+
+  -> Over Fetching
+      When the HTTP route returns more data than necessary
+
+  -> Schema First: It is example
+  -> Code First:
+*/
+
 const typeDefs = gql`
   type User {
     id: String!,
